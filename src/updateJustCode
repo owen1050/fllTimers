@@ -1,0 +1,6 @@
+screen -XS FLLTimer kill
+git add -A
+git commit -m "update from server"
+git pull
+git push
+screen -dmS FLLTimer python3 server.py
