@@ -2,12 +2,9 @@ from flask import Flask
 from flask import request
 from threading import Thread
 
-
 import json, time, requests
 
-db = databaseQuerys()
 app = Flask(__name__, static_folder='static', static_url_path='')
-
 
 @app.route('/')
 def main():
