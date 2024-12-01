@@ -1,7 +1,7 @@
 
 var stageText = document.getElementById("stage");
 var matchText = document.getElementById("matchNum");
-url = "http://villawalsh.happyrobotics.com"
+url = "https://flltimers.happyrobotics.com"
 //url ="http://localhost:5000" 
 var resetButtonCount = 0;
 var intervalId = window.setInterval(function(){
