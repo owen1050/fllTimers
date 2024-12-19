@@ -4,6 +4,9 @@ from threading import Thread
 
 import json, time, requests
 
+matchNum = 0
+matchTime = -1
+
 app = Flask(__name__, static_folder='static', static_url_path='')
 
 @app.route('/')
@@ -67,8 +70,5 @@ def apiGetMatchNum():
 
 
 if __name__ == '__main__':
-	global matchTime
-	global matchNum
-	matchNum = 0
-	matchTime = -1
+
 	app.run(host="0.0.0.0", port=5002)
