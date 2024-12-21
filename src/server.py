@@ -17,8 +17,6 @@ def main():
 def matchTimer():
 	return app.send_static_file('matchTime.html')
 
-
-#api endpoints
 @app.route('/api/getMatchTime')
 def apiGetMatchTime():
 	global matchTime
@@ -42,13 +40,11 @@ def apiStartMatch():
 	print(matchTime)
 	return str(0)
 
-
 @app.route('/api/endMatch')
 def apiEndMatch():
 	global matchTime
 	matchTime = -1
 	return str(0)
-
 
 @app.route('/api/addOneMatchNum')
 def apiAddOneMatchNum():
@@ -67,8 +63,5 @@ def apiGetMatchNum():
 	global matchNum
 	return str(matchNum)
 
-
-
 if __name__ == '__main__':
-
 	app.run(host="0.0.0.0", port=5002)
