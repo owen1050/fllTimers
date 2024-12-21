@@ -3,4 +3,4 @@ git add -A
 git commit -m "update from server"
 git pull
 git push
-screen -dmS FLLTimer python3 server.py
+screen -dmS waitress-serve --host 127.0.0.1 --port 5004 server:app
